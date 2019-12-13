@@ -1,0 +1,80 @@
+{
+  "name": "vscode-implicit-indent",
+  "displayName": "implicit-indent",
+  "description": "When the cursor moves to an empty line, automatically indent to the correct level.",
+  "version": "1.0.0",
+  "engines": {
+    "vscode": "^1.41.0"
+  },
+  "categories": [
+    "Formatters",
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:implicit-indent.cursorUp",
+    "onCommand:implicit-indent.cursorDown",
+    "onCommand:implicit-indent.cursorLeft",
+    "onCommand:implicit-indent.cursorRight"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "implicit-indent.cursorUp",
+        "title": "Move Cursor Up with Implicit Indent"
+      },
+      {
+        "command": "implicit-indent.cursorDown",
+        "title": "Move Cursor Down with Implicit Indent"
+      },
+      {
+        "command": "implicit-indent.cursorLeft",
+        "title": "Move Cursor Left with Implicit Indent"
+      },
+      {
+        "command": "implicit-indent.cursorRight",
+        "title": "Move Cursor Right with Implicit Indent"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "implicit-indent.cursorUp",
+        "key": "up",
+        "when": "textInputFocus"
+      },
+      {
+        "command": "implicit-indent.cursorDown",
+        "key": "down",
+        "when": "textInputFocus"
+      },
+      {
+        "command": "implicit-indent.cursorLeft",
+        "key": "left",
+        "when": "textInputFocus"
+      },
+      {
+        "command": "implicit-indent.cursorRight",
+        "key": "right",
+        "when": "textInputFocus"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile",
+    "test": "node ./out/test/runTest.js"
+  },
+  "devDependencies": {
+    "@types/glob": "^7.1.1",
+    "@types/mocha": "^5.2.7",
+    "@types/node": "^12.11.7",
+    "@types/vscode": "^1.41.0",
+    "glob": "^7.1.5",
+    "mocha": "^6.2.2",
+    "typescript": "^3.6.4",
+    "tslint": "^5.20.0",
+    "vscode-test": "^1.2.2"
+  }
+}
