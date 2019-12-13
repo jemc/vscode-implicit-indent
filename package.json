@@ -2,6 +2,8 @@
   "name": "vscode-implicit-indent",
   "displayName": "implicit-indent",
   "description": "When the cursor moves to an empty line, automatically indent to the correct level.",
+  "publisher": "jemc",
+  "repository": "https://github.com/jemc/vscode-implicit-indent",
   "version": "1.0.0",
   "engines": {
     "vscode": "^1.41.0"
@@ -76,5 +78,8 @@
     "typescript": "^3.6.4",
     "tslint": "^5.20.0",
     "vscode-test": "^1.2.2"
+  },
+  "dependencies": {
+    "vsce": "^1.71.0"
   }
 }
