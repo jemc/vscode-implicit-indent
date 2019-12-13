@@ -4,7 +4,7 @@
   "description": "When the cursor moves to an empty line, automatically indent to the correct level.",
   "publisher": "jemc",
   "repository": "https://github.com/jemc/vscode-implicit-indent",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "engines": {
     "vscode": "^1.41.0"
   },
@@ -80,6 +80,7 @@
     "vscode-test": "^1.2.2"
   },
   "dependencies": {
+    "async-mutex": "^0.1.4",
     "vsce": "^1.71.0"
   }
 }

@@ -2,7 +2,7 @@
 
 When the cursor moves to an empty line, automatically indent to the correct level.
 
-That is, moving the cursor onto an empty line with the up/down/left/right arrows will act just like it did when the line was created, jumping to the level of indentation implied by the indentation settings for the language you're working in.
+That is, moving the cursor onto an empty line with the up/down/left/right arrows will cause the cursor to also jump to an appropriate level of indentation. This is influenced by the indentation settings for the language you're working in, but falls back to using the indentation level of the next non-empty line.
 
 ## Configuration
 

@@ -6,6 +6,11 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 
 ## [Unreleased]
 
+## 1.0.1
+
+- Fix issues with concurrency by executing only one movement command at a time.
+- Fix issue with not reaching the right indent level on some languages.
+
 ## 1.0.0
 
 - Initial release
