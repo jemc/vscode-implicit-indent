@@ -6,6 +6,10 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 
 ## [Unreleased]
 
+## 1.0.2
+
+- Fix issues with default keybinding "when" clause.
+
 ## 1.0.1
 
 - Fix issues with concurrency by executing only one movement command at a time.
