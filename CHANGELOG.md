@@ -6,6 +6,10 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 
 ## [Unreleased]
 
+## 1.1.0
+
+- Add ability to indent when clicking to an empty line. (Credit to: @DevEstacion)
+
 ## 1.0.2
 
 - Fix issues with default keybinding "when" clause.

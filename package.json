@@ -4,15 +4,16 @@
   "description": "When the cursor moves to an empty line, automatically indent to the correct level.",
   "publisher": "jemc",
   "repository": "https://github.com/jemc/vscode-implicit-indent",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "engines": {
-    "vscode": "^1.41.0"
+    "vscode": "^1.37.0"
   },
   "categories": [
     "Formatters",
     "Other"
   ],
   "activationEvents": [
+    "onStartupFinished",
     "onCommand:implicit-indent.cursorUp",
     "onCommand:implicit-indent.cursorDown",
     "onCommand:implicit-indent.cursorLeft",
@@ -65,22 +66,17 @@
     "vscode:prepublish": "npm run compile",
     "compile": "tsc -p ./",
     "watch": "tsc -watch -p ./",
-    "pretest": "npm run compile",
-    "test": "node ./out/test/runTest.js"
+    "lint": "eslint . --ext .ts,.tsx"
   },
   "devDependencies": {
-    "@types/glob": "^7.1.1",
-    "@types/mocha": "^5.2.7",
-    "@types/node": "^12.11.7",
-    "@types/vscode": "^1.41.0",
-    "glob": "^7.1.5",
-    "mocha": "^6.2.2",
-    "typescript": "^3.6.4",
-    "tslint": "^5.20.0",
-    "vscode-test": "^1.2.2"
+    "@types/node": "^12.12.0",
+    "@types/vscode": "^1.33.0",
+    "@typescript-eslint/eslint-plugin": "^4.16.0",
+    "@typescript-eslint/parser": "^4.16.0",
+    "eslint": "^7.21.0",
+    "typescript": "^4.2.2"
   },
   "dependencies": {
-    "async-mutex": "^0.1.4",
-    "vsce": "^1.71.0"
+    "async-mutex": "^0.3.1"
   }
 }
