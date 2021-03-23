@@ -6,6 +6,10 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 
 ## [Unreleased]
 
+## 1.1.1
+
+- Disable keyboard commands when parameter hints are visible. (Credit to @vchirikov)
+
 ## 1.1.0
 
 - Add ability to indent when clicking to an empty line. (Credit to: @DevEstacion)
