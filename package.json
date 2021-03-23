@@ -1,82 +1,82 @@
 {
-	"name": "vscode-indent-on-empty-line",
-	"displayName": "indent-on-empty-line",
-	"description": "When the cursor moves to an empty line, automatically indent to the correct level.",
-	"publisher": "1devestacion1",
-	"repository": "https://github.com/jemc/vscode-implicit-indent",
-	"version": "1.0.0",
-	"engines": {
-		"vscode": "^1.37.0"
-	},
-	"categories": [
-		"Formatters",
-		"Other"
-	],
-	"activationEvents": [
-		"onStartupFinished",
-		"onCommand:implicit-indent.cursorUp",
-		"onCommand:implicit-indent.cursorDown",
-		"onCommand:implicit-indent.cursorLeft",
-		"onCommand:implicit-indent.cursorRight"
-	],
-	"main": "./out/extension.js",
-	"contributes": {
-		"commands": [
-			{
-				"command": "implicit-indent.cursorUp",
-				"title": "Move Cursor Up with Implicit Indent"
-			},
-			{
-				"command": "implicit-indent.cursorDown",
-				"title": "Move Cursor Down with Implicit Indent"
-			},
-			{
-				"command": "implicit-indent.cursorLeft",
-				"title": "Move Cursor Left with Implicit Indent"
-			},
-			{
-				"command": "implicit-indent.cursorRight",
-				"title": "Move Cursor Right with Implicit Indent"
-			}
-		],
-		"keybindings": [
-			{
-				"command": "implicit-indent.cursorUp",
-				"key": "up",
-				"when": "editorTextFocus && !editorReadonly && !suggestWidgetVisible"
-			},
-			{
-				"command": "implicit-indent.cursorDown",
-				"key": "down",
-				"when": "editorTextFocus && !editorReadonly && !suggestWidgetVisible"
-			},
-			{
-				"command": "implicit-indent.cursorLeft",
-				"key": "left",
-				"when": "editorTextFocus && !editorReadonly && !suggestWidgetVisible"
-			},
-			{
-				"command": "implicit-indent.cursorRight",
-				"key": "right",
-				"when": "editorTextFocus && !editorReadonly && !suggestWidgetVisible"
-			}
-		]
-	},
-	"scripts": {
-		"vscode:prepublish": "npm run compile",
-		"compile": "tsc -p ./",
-		"watch": "tsc -watch -p ./",
-		"lint": "eslint . --ext .ts,.tsx"
-	},
-	"devDependencies": {
-		"@types/node": "^12.12.0",
-		"@types/vscode": "^1.33.0",
-		"@typescript-eslint/eslint-plugin": "^4.16.0",
-		"@typescript-eslint/parser": "^4.16.0",
-		"eslint": "^7.21.0",
-		"typescript": "^4.2.2"
-	},
-	"dependencies": {
-		"async-mutex": "^0.3.1"
-	}
+  "name": "vscode-implicit-indent",
+  "displayName": "implicit-indent",
+  "description": "When the cursor moves to an empty line, automatically indent to the correct level.",
+  "publisher": "jemc",
+  "repository": "https://github.com/jemc/vscode-implicit-indent",
+  "version": "1.1.0",
+  "engines": {
+    "vscode": "^1.37.0"
+  },
+  "categories": [
+    "Formatters",
+    "Other"
+  ],
+  "activationEvents": [
+    "onStartupFinished",
+    "onCommand:implicit-indent.cursorUp",
+    "onCommand:implicit-indent.cursorDown",
+    "onCommand:implicit-indent.cursorLeft",
+    "onCommand:implicit-indent.cursorRight"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "implicit-indent.cursorUp",
+        "title": "Move Cursor Up with Implicit Indent"
+      },
+      {
+        "command": "implicit-indent.cursorDown",
+        "title": "Move Cursor Down with Implicit Indent"
+      },
+      {
+        "command": "implicit-indent.cursorLeft",
+        "title": "Move Cursor Left with Implicit Indent"
+      },
+      {
+        "command": "implicit-indent.cursorRight",
+        "title": "Move Cursor Right with Implicit Indent"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "implicit-indent.cursorUp",
+        "key": "up",
+        "when": "editorTextFocus && !editorReadonly && !suggestWidgetVisible"
+      },
+      {
+        "command": "implicit-indent.cursorDown",
+        "key": "down",
+        "when": "editorTextFocus && !editorReadonly && !suggestWidgetVisible"
+      },
+      {
+        "command": "implicit-indent.cursorLeft",
+        "key": "left",
+        "when": "editorTextFocus && !editorReadonly && !suggestWidgetVisible"
+      },
+      {
+        "command": "implicit-indent.cursorRight",
+        "key": "right",
+        "when": "editorTextFocus && !editorReadonly && !suggestWidgetVisible"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "lint": "eslint . --ext .ts,.tsx"
+  },
+  "devDependencies": {
+    "@types/node": "^12.12.0",
+    "@types/vscode": "^1.33.0",
+    "@typescript-eslint/eslint-plugin": "^4.16.0",
+    "@typescript-eslint/parser": "^4.16.0",
+    "eslint": "^7.21.0",
+    "typescript": "^4.2.2"
+  },
+  "dependencies": {
+    "async-mutex": "^0.3.1"
+  }
 }
